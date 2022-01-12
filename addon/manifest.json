@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "focusmode",
+	"version": "1.0",
+	"description": "Allows you to block a list of sites for a schedule",
+	"icons": {
+		"48": "icons/icon-48.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"js": [
+				"content_scripts/index.js"
+			]
+		}
+	]
+}
